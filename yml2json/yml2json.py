@@ -1,0 +1,1 @@
+import os;os.system("type file.yml  | yml2json --pretty")
