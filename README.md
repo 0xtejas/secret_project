@@ -30,3 +30,7 @@
 - First I extract the hex data from the corrupted file in bottom to top manner.
 - Then, I swapped the nibble position (For Example: 89 -> 98).
 - THe used hexdump library to reconstruct the image from the hex.
+
+### Flag for the Reverse ME
+
+![ReverseMEFlag](/Reverse_nibbiles/image.png)
