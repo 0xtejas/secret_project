@@ -1,4 +1,4 @@
-from PIL import *
+from PIL import Image
 
 def asciiToBin(ascii):
 	return ''.join(str(bin(ord(byte)))[2:].zfill(8) for byte in ascii)
