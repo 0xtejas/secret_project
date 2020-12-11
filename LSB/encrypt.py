@@ -6,9 +6,8 @@ def asciiToBin(ascii):
 def hide(img, data, outName):
 	header, trailer = 2*"11001100",2*"0101010100000000"
 	dataBin = header+asciiToBin(data)+trailer
-	pixels, mode = list(img.getdata()), img.mode
+	pixels, mode = list(Image.Image.getdata(img)), img.mode
 	newPixels = []
-
 	for i in range(len(dataBin)):
 		newPixel = list(pixels[i])
 		newPixel[i%len(mode)] = setLSB(newPixel[i%len(mode)], dataBin[i])
@@ -24,3 +23,5 @@ def setLSB(target, value):
 	if binary[-1] != value:
 		binary = binary[:-1] + value
 	return int(binary, 2)
+
+
