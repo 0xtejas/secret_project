@@ -33,7 +33,8 @@
 
 ### Flag for the Reverse ME
 
-![ReverseMEFlag](/Reverse_nibbiles/image.png)
+
+<img width="50%" src="https://github.com/tejas15802/secret_project/blob/main/Reverse_nibbiles/image.png"></img>
 
 <br>
 
