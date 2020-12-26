@@ -34,3 +34,18 @@
 ### Flag for the Reverse ME
 
 ![ReverseMEFlag](/Reverse_nibbiles/image.png)
+
+<br>
+
+## LSB 
+
+- We are given with a python program which encodes the given secret text into the image file.
+- How it works?
+  The secret text is converted to binary form and then header and trailer is added to it so that we can identify the text while decoding. 
+  Then we read the pixel and mode of the image, and write new pixel values embedding the text <a href="https://towardsdatascience.com/hiding-data-in-an-image-image-steganography-using-python-e491b68b1372">Least Significant Bit Steganography</a>.
+- Decoding the text from the pixel is similar to how we encoded it, we read all the pixel and find LSB of each pixel.
+- Find the Header and Trailer then slice the result to get the binary of secret text.
+- Convert the binary back to acsii so that we can read the secret message 
+
+## Flag for LSB
+d4rk{345y_LSB}c0de
