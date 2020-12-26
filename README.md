@@ -18,3 +18,19 @@
   - The Finaly function encode, converts the string to a hex format. We can use binascii python module to unhexify
   
   - Logically we reconstruct the function to our advantage. And give the cipher text as input, Hurray we have solved this challenge. 
+  
+  </br >
+  
+  
+## Reverse ME
+
+- Here if you notice the hexdump of the corrupted file you will notice that the order of the bytes are changed. Which means its upside down. How did I know that?
+  By checking the first and last line for the hex header for png file, I found the last line had it, but the nibbles were reversed to.
+ 
+- First I extract the hex data from the corrupted file in bottom to top manner.
+- Then, I swapped the nibble position (For Example: 89 -> 98).
+- THe used hexdump library to reconstruct the image from the hex.
+
+### Flag for the Reverse ME
+
+![ReverseMEFlag](/Reverse_nibbiles/image.png)
